@@ -1,6 +1,6 @@
 {
   "name": "package-name-conflict",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if NPM package names conflict",
   "main": "./build/index.js",
   "author": "Connor White <connor.bcw@gmail.com>",
