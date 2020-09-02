@@ -7,7 +7,7 @@
     <img alt="typescript" src="https://img.shields.io/github/languages/top/bconnorwhite/package-name-conflict.svg">
   </a>
   <a href="https://github.com/bconnorwhite/package-name-conflict">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/npm-pd?label=Stars%20Appreciated%21&style=social">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/package-name-conflict?label=Stars%20Appreciated%21&style=social">
   </a>
   <a href="https://twitter.com/bconnorwhite">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
@@ -37,7 +37,7 @@ npm install package-name-conflict
 ## API
 
 ```ts
-import { conflicts, conflictsAny transform } from "package-name-conflict";
+import { conflicts, conflictsAny, transform } from "package-name-conflict";
 
 // Check if two package names conflict:
 
@@ -85,5 +85,7 @@ transform(name: string) => string;
 
 ## Related Packages
 
+- [is-name-taken](https://npmjs.com/package/is-name-taken): Check if an NPM package name is taken
 - [all-package-names](https://npmjs.com/package/all-package-names): Get all NPM package names.
-
+- [npm-pd](https://npmjs.com/package/npms-pd): A CLI dashboard for NPM publishers
+- [npms-io-client](https://npmjs.com/package/npms-io-client): Isomorphic typed client for npms.io
