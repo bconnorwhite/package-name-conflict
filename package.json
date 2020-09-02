@@ -1,0 +1,37 @@
+{
+  "name": "package-name-conflict",
+  "version": "1.0.0",
+  "description": "Check if NPM package names conflict",
+  "main": "./build/index.js",
+  "author": "Connor White <connor.bcw@gmail.com>",
+  "homepage": "https://connorwhite.org/github/package-name-conflict",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/package-name-conflict.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "name",
+    "names",
+    "conflict",
+    "conflicts",
+    "check",
+    "if",
+    "any",
+    "transform",
+    "typescript",
+    "typed",
+    "ts"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "prepublishOnly": "yarn build && yarn test",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^1.9.7",
+    "jest": "^26.4.2"
+  }
+}
