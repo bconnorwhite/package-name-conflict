@@ -2,7 +2,7 @@
 /**
  * Matches `.`, `-`, or `_`
  */
-const punctuationRegex = /[\.\-\_]/g;
+const punctuationRegex = /[.\-_]/g;
 
 export function transform(name: string) {
   return name.replace(punctuationRegex, "").toLowerCase();
