@@ -55,11 +55,11 @@ transform("Abc-123"); // "abc123"
 ```
 #### Types:
 ```ts
-conflicts(nameA: string, nameB: string) => boolean;
+function transform(name: string): string;
 
-conflictsAny(name: string, names: string[]) => string | false;
+function conflicts(nameA: string, nameB: string): boolean;
 
-transform(name: string) => string;
+function conflictsAny(name: string, names: string[]): string | false;
 ```
 
 ##
@@ -68,8 +68,7 @@ transform(name: string) => string;
 
 <h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/package-name-conflict.svg"></h2>
 
-- [@bconnorwhite/bob](https://npmjs.com/package/@bconnorwhite/bob): Bob builds and watches typescript projects.
-- [jest](https://npmjs.com/package/jest): Delightful JavaScript Testing.
+- [@bconnorwhite/bob](https://npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
 
 ##
 
@@ -86,6 +85,6 @@ transform(name: string) => string;
 ## Related Packages
 
 - [is-name-taken](https://npmjs.com/package/is-name-taken): Check if an NPM package name is taken
-- [all-package-names](https://npmjs.com/package/all-package-names): Get all NPM package names.
+- [all-package-names](https://npmjs.com/package/all-package-names): Get all NPM package names
 - [npm-pd](https://npmjs.com/package/npms-pd): A CLI dashboard for NPM publishers
 - [npms-io-client](https://npmjs.com/package/npms-io-client): Isomorphic typed client for npms.io

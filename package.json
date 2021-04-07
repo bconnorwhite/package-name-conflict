@@ -2,10 +2,13 @@
   "name": "package-name-conflict",
   "version": "1.0.1",
   "description": "Check if NPM package names conflict",
-  "main": "./build/index.js",
-  "author": "Connor White <connor.bcw@gmail.com>",
-  "homepage": "https://connorwhite.org/github/package-name-conflict",
   "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://github.com/bconnorwhite/package-name-conflict.git",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/package-name-conflict.git"
@@ -25,13 +28,29 @@
     "typed",
     "ts"
   ],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build && yarn test",
-    "test": "jest"
+    "commit": "bob commit",
+    "lint": "bob lint",
+    "release": "bob release",
+    "test": "bob test"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.7",
-    "jest": "^26.4.2"
+    "@bconnorwhite/bob": "^2.9.4"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
   }
 }

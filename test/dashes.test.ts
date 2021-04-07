@@ -1,4 +1,5 @@
-const { conflicts } = require("../build/index.js");
+import { test, expect } from "@jest/globals";
+import { conflicts } from "../source";
 
 test("identical dash", () => {
   expect(conflicts("abc-123", "abc-123")).toBe(true);

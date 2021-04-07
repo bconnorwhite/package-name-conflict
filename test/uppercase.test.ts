@@ -1,4 +1,5 @@
-const { conflicts } = require("../build/index.js");
+import { test, expect } from "@jest/globals";
+import { conflicts } from "../source";
 
 test("identical uppercase", () => {
   expect(conflicts("abc-123", "ABC-123")).toBe(true);

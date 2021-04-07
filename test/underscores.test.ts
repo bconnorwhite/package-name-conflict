@@ -1,4 +1,5 @@
-const { conflicts } = require("../build/index.js");
+import { test, expect } from "@jest/globals";
+import { conflicts } from "../source";
 
 test("identical underscore", () => {
   expect(conflicts("abc_123", "abc_123")).toBe(true);

@@ -1,4 +1,5 @@
-const { conflicts } = require("../build/index.js");
+import { test, expect } from "@jest/globals";
+import { conflicts } from "../source";
 
 test("readme", () => {
   expect(conflicts("abc.123", "Abc-123")).toBe(true);

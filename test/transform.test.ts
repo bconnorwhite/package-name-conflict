@@ -1,4 +1,5 @@
-const { transform } = require("../build/index.js");
+import { test, expect } from "@jest/globals";
+import { transform } from "../source";
 
 test("readme", () => {
   expect(transform("Abc-123")).toBe("abc123");
