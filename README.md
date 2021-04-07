@@ -6,6 +6,9 @@
   <a href="https://github.com/bconnorwhite/package-name-conflict">
     <img alt="typescript" src="https://img.shields.io/github/languages/top/bconnorwhite/package-name-conflict.svg">
   </a>
+  <a href='https://coveralls.io/github/bconnorwhite/package-name-conflict?branch=master'>
+    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/package-name-conflict.svg?branch=master">
+  </a>
   <a href="https://github.com/bconnorwhite/package-name-conflict">
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/package-name-conflict?label=Stars%20Appreciated%21&style=social">
   </a>
